@@ -1,0 +1,302 @@
+/* ==============================================================================
+   UmaHub - Xendit Payment Modal Styles
+   Matches Xendit Branding & Design
+   ============================================================================== */
+
+.xendit-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 29, 55, 0.65);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: xndFadeIn 0.2s ease-out;
+}
+
+@keyframes xndFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.xendit-modal-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 25px 60px -15px rgba(10, 29, 55, 0.35), 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #E2E8F0;
+  animation: xndSlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes xndSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Modal Header with Xendit Branding */
+.xendit-modal-top {
+  background: #0E1E38;
+  color: #FFFFFF;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #00C0D4;
+}
+
+.xendit-brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.xendit-logo-text {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.xendit-logo-dot {
+  color: #00C0D4;
+}
+
+.xendit-close-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: all 0.15s ease;
+}
+
+.xendit-close-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* Body Content */
+.xendit-modal-body {
+  padding: 24px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Channel Header (GCash or Maya) */
+.xendit-channel-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1.5px solid;
+}
+
+.xendit-channel-banner.gcash {
+  background: #F0F7FF;
+  border-color: #BAE6FD;
+}
+
+.xendit-channel-banner.maya {
+  background: #F0FDF4;
+  border-color: #BBF7D0;
+}
+
+.xendit-channel-icon-pill {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 800;
+  color: #FFFFFF;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.xendit-channel-icon-pill.gcash {
+  background: #007DFE;
+}
+
+.xendit-channel-icon-pill.maya {
+  background: #00A651;
+}
+
+.xendit-channel-texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.xendit-channel-title {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0;
+}
+
+.xendit-channel-sub {
+  font-size: 12px;
+  color: #64748B;
+  margin: 2px 0 0;
+}
+
+/* Amount Card */
+.xendit-amount-card {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.xendit-amount-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.xendit-merchant-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.xendit-order-ref {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1E293B;
+  margin-top: 2px;
+}
+
+.xendit-amount-val {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0E1E38;
+}
+
+/* Inputs Group */
+.xendit-inputs-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.xendit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.xendit-field-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.xendit-field-input {
+  background: #FFFFFF;
+  border: 1.5px solid #CBD5E1;
+  border-radius: 10px;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0F172A;
+  transition: all 0.15s ease;
+}
+
+.xendit-field-input:focus {
+  outline: none;
+  border-color: #007DFE;
+  box-shadow: 0 0 0 3px rgba(0, 125, 254, 0.15);
+}
+
+/* Actions */
+.xendit-modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.btn-authorize-xendit {
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.15s ease;
+}
+
+.btn-authorize-xendit.gcash {
+  background: #007DFE;
+}
+
+.btn-authorize-xendit.gcash:hover {
+  background: #0066D6;
+  transform: translateY(-1px);
+}
+
+.btn-authorize-xendit.maya {
+  background: #00A651;
+}
+
+.btn-authorize-xendit.maya:hover {
+  background: #008742;
+  transform: translateY(-1px);
+}
+
+.btn-authorize-xendit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.btn-cancel-xendit {
+  background: transparent;
+  border: none;
+  color: #64748B;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-cancel-xendit:hover {
+  color: #0F172A;
+  background: #F1F5F9;
+}

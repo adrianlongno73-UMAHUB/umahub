@@ -1,0 +1,346 @@
+/* ==========================================================================
+   UmaHub - Farmer Onboarding Styles
+   ========================================================================== */
+
+.onboarding-page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F4F6F2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.onboarding-top-nav {
+  width: 100%;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.onboarding-nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo-group {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.onboarding-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.onboarding-step-counter {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6B7280;
+}
+
+/* Main Form Card */
+.onboarding-card-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 24px 60px;
+}
+
+.onboarding-card {
+  width: 100%;
+  max-width: 540px;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  padding: 34px 36px 30px;
+}
+
+.onboarding-main-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #17331B;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.onboarding-sub-desc {
+  font-size: 13px;
+  color: #6B7280;
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+/* Progress Segments Bar */
+.progress-segments-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.progress-segment {
+  flex: 1;
+  height: 4px;
+  border-radius: 9999px;
+  background-color: #E2E8F0;
+  transition: background-color 0.3s ease;
+}
+
+.progress-segment.active {
+  background-color: #2D5A27;
+}
+
+/* Form Styles */
+.form-input-short {
+  max-width: 220px;
+}
+
+.form-input-medium {
+  max-width: 320px;
+}
+
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-select {
+  border: 1px solid #CBD5E1;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  color: #1F2937;
+  outline: none;
+  background: #FFFFFF;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form-select:focus {
+  border-color: #2D5A27;
+  box-shadow: 0 0 0 3px rgba(45, 90, 39, 0.15);
+}
+
+.form-textarea {
+  border: 1px solid #CBD5E1;
+  border-radius: 10px;
+  padding: 11px 14px;
+  font-size: 13.5px;
+  color: #1F2937;
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+  resize: vertical;
+  transition: all 0.2s ease;
+  background: #FFFFFF;
+}
+
+.form-textarea:focus {
+  border-color: #2D5A27;
+  box-shadow: 0 0 0 3px rgba(45, 90, 39, 0.15);
+}
+
+/* Map Picker Box */
+.map-picker-box {
+  background-color: #DDE6D8;
+  border-radius: 14px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 6px;
+  margin-bottom: 24px;
+  border: 1px solid #C8D6C2;
+  transition: all 0.2s ease;
+}
+
+.map-picker-box:hover {
+  background-color: #D3DFCD;
+}
+
+.map-pin-icon-wrap {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.map-pin-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.map-picker-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #2D5A27;
+}
+
+.map-picker-sub {
+  font-size: 11px;
+  color: #5C6E5E;
+  margin-top: 2px;
+}
+
+.pin-coordinates-badge {
+  margin-top: 10px;
+  background: #FFFFFF;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #2D5A27;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Upload Dashed Card */
+.upload-dashed-card {
+  border: 1.5px dashed #A3B89E;
+  background-color: #F0F4EC;
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-align: center;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upload-dashed-card:hover {
+  background-color: #E7EFE1;
+  border-color: #2D5A27;
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.upload-card-label {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.upload-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 2px;
+}
+
+.upload-subtitle {
+  font-size: 11px;
+  color: #6B7280;
+}
+
+/* Notice Box */
+.review-notice-box {
+  background-color: #E6EFE2;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+}
+
+.review-notice-box p {
+  font-size: 12px;
+  color: #284E2A;
+  line-height: 1.45;
+}
+
+/* Bottom Buttons Row */
+.onboarding-buttons-row {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.onboarding-back-btn {
+  background: #FFFFFF;
+  border: 1.5px solid #2D5A27;
+  color: #2D5A27;
+  border-radius: 9999px;
+  padding: 11px 20px;
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.onboarding-back-btn:hover {
+  background: #F8FAF7;
+  transform: translateY(-1px);
+}
+
+.onboarding-primary-btn {
+  background: #2D5A27;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 9999px;
+  padding: 11px 20px;
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(45, 90, 39, 0.25);
+  transition: all 0.2s ease;
+}
+
+.onboarding-primary-btn:hover {
+  background: #21431D;
+  box-shadow: 0 6px 16px rgba(45, 90, 39, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Success Card */
+.success-card {
+  text-align: center;
+}
+
+.success-badge-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #DBE9DC;
+  color: #2D5A27;
+  font-size: 26px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+@media (max-width: 640px) {
+  .onboarding-card {
+    padding: 24px 20px;
+  }
+
+  .form-row-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .form-input-short,
+  .form-input-medium {
+    max-width: 100%;
+  }
+
+  .onboarding-nav-container {
+    padding: 12px 20px;
+  }
+}
